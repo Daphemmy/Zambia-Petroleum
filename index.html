@@ -11,121 +11,147 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <!-- =========================================================== -->
-    <header>
+    <header class="bg-white shadow-md">
       <div class="header-content">
-        <div class="logo-container">
-          <img src="/icon-logo.jpg" alt="Zambis_logo" />
-          <div class="logo-text">
-            <h3>ZAMBIS</h3>
-            <p>PETROLEUM LIMITED</p>
-          </div>
+        <div class="logo">
+          <img src="/img-logo.png" alt="Zambis_logo" />
         </div>
-        <nav class="navbar">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutUs.html">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="nav-con">
+          <nav class="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutUs.html">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="drop-label"
+                  >Services <span class="arrow">▼</span></a
+                >
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item" href="#">Logistics</a></li>
+                  <li><a class="dropdown-item" href="#">Retail</a></li>
+                  <li><a class="dropdown-item" href="#">S &amp; T</a></li>
+                  <li><a class="dropdown-item" href="#">Distribution</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Fleet Management</a>
+                  </li>
+                  <!-- add others -->
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="drop-label"
+                  >Products <span class="arrow">▼</span></a
+                >
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item" href="#">Petrol</a></li>
+                  <li><a class="dropdown-item" href="#">Oil</a></li>
+                  <li><a class="dropdown-item" href="#">Diesel</a></li>
+                  <li><a class="dropdown-item" href="#">Gas</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Kerosene</a>
+                  </li>
+                  <!-- add others -->
+                </ul>
+              </li>
+              <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
-
     <!-- ============================================================= -->
 
-    <main>
-      <section class="hero-section">
-        <div class="slideshow-container">
-          <div class="slide fade">
-            <div
-              class="slide-image"
-              style="background-image: url('petrol-station.jpg')"
-            ></div>
-          </div>
-          <div class="slide fade">
-            <div
-              class="slide-image"
-              style="background-image: url('petrol-tank.jpg')"
-            ></div>
-          </div>
+    <section class="hero-section">
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <div
+            class="slide-image"
+            style="background-image: url('petrol-station.jpg')"
+          ></div>
         </div>
-        <div class="energy">
-          <h2>Energy Solutions for a Sustainable Future</h2>
+        <div class="slide fade">
+          <div
+            class="slide-image"
+            style="background-image: url('petrol-tank.jpg')"
+          ></div>
+        </div>
+      </div>
+      <div class="energy">
+        <h2>Energy Solutions for a Sustainable Future</h2>
+        <p>
+          Zambis Petroleum is committed to delivering reliable energy solutions
+          while maintaining environmental responsibility.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================================= -->
+
+    <section class="sec-exp">
+      <div class="three_boxes">
+        <div class="each_box">
+          <h3>Exploration</h3>
           <p>
-            Zambis Petroleum is committed to delivering reliable energy
-            solutions while maintaining environmental responsibility.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            quo nemo ab neque aperiam. Aspernatur minus illum assumenda
+            temporibus voluptatum.
           </p>
-        </div>
-      </section>
-
-      <!-- ======================================= -->
-
-      <section class="sec-exp">
-        <div class="three_boxes">
-          <div class="each_box">
-            <h3>Exploration</h3>
-            <p>
-              Our cutting-edge exploration technologies help identify new energy
-              resources with minimal environmental impact.
-            </p>
-            <div>
-              <button class="btn-primary">Learn More</button>
-            </div>
-          </div>
-
-          <div class="each_box">
-            <h3>Production</h3>
-            <p>
-              State-of-the-art production facilities ensures efficientextraction
-              and processing of petroleum products
-            </p>
-            <div>
-              <button class="btn-primary">Learn More</button>
-            </div>
-          </div>
-
-          <div class="each_box">
-            <h3>Distribution</h3>
-            <p>
-              Reliable logistics network delivering energy products where
-              they're needed most and ensure safe transportation.
-            </p>
-            <div>
-              <button class="btn-primary">Learn More</button>
-            </div>
+          <div>
+            <button class="btn-primary">Learn More</button>
           </div>
         </div>
-      </section>
-      <!-- ========================================= -->
 
-      <!-- Call to Action Section -->
-
-      <section class="ready-section">
-        <div class="get_ready">
-          <h2>Ready to Fuel Your Business?</h2>
+        <div class="each_box">
+          <h3>Production</h3>
           <p>
-            Join thousands of satisfied customers who trust Zambis Petroleum for
-            their fuel needs. Contact our team today to discuss your
-            requirements.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore in
+            minima, neque excepturi sed assumenda rerum odit. Minima,
+            voluptatibus expedita!
           </p>
-          <div class="button-container">
-            <button class="primary_btn">Request a Quote</button>
-            <button class="secondary_btn">Contact Sales Team</button>
+          <div>
+            <button class="btn-primary">Learn More</button>
           </div>
         </div>
-      </section>
-    </main>
+
+        <div class="each_box">
+          <h3>Distribution</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+            vitae vel velit provident ullam dolore quas deserunt alias illo
+            dicta.
+          </p>
+          <div>
+            <button class="btn-primary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================================= -->
+
+    <!-- Call to Action Section -->
+
+    <section class="ready-section">
+      <div class="get_ready">
+        <h2>Ready to Fuel Your Business?</h2>
+        <p>
+          Join thousands of satisfied customers who trust Zambis Petroleum for
+          their fuel needs. Contact our team today to discuss your requirements.
+        </p>
+        <div class="button-container">
+          <button class="primary_btn">Request a Quote</button>
+          <button class="secondary_btn">Contact Sales Team</button>
+        </div>
+      </div>
+    </section>
 
     <!-- ================================================= -->
     <section class="last-sec">
       <div class="zam-prov">
         <h3 class="font-weight: bolder">Zambis Petroleum</h3>
         <p class="text-gray-400">
-          Providing quality fuel solutions since 1985. Committed to excellence
+          Providing quality fuel solutions since 19**. Committed to excellence
           in service and product quality.
         </p>
         <div class="form">
@@ -178,10 +204,7 @@
       </div>
 
       <div class="footer-social">
-        <!-- <a href="#" class="social-icon">FB</a>
-        <a href="#" class="social-icon">TW</a>
-        <a href="#" class="social-icon">IG</a>
-        <a href="#" class="social-icon">LI</a> -->
+        <h4 class="text-white">Follow us</h4>
         <img class="social-icon" src="/icons8-facebook-50.png" alt="#" />
         <img class="social-icon" src="/icons8-instagram-50.png" alt="#" />
         <img class="social-icon" src="/icons8-linkedin-50.png" alt="#" />

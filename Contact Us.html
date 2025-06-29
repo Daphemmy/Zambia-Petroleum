@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Zambis Petroleum</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact-style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- =========================================================== -->
+    <header class="bg-white shadow-md">
+      <div class="header-content">
+        <div class="logo">
+          <img src="/img-logo.png" alt="Zambis_logo" />
+        </div>
+        <div class="nav-con">
+          <nav class="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutUs.html">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="drop-label"
+                  >Services <span class="arrow">▼</span></a
+                >
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item" href="#">Logistics</a></li>
+                  <li><a class="dropdown-item" href="#">Retail</a></li>
+                  <li><a class="dropdown-item" href="#">S &amp; T</a></li>
+                  <li><a class="dropdown-item" href="#">Distribution</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Fleet Management</a>
+                  </li>
+                  <!-- add others -->
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="drop-label"
+                  >Products <span class="arrow">▼</span></a
+                >
+                <ul class="dropdown-content">
+                  <li><a class="dropdown-item" href="#">Petrol</a></li>
+                  <li><a class="dropdown-item" href="#">Oil</a></li>
+                  <li><a class="dropdown-item" href="#">Diesel</a></li>
+                  <li><a class="dropdown-item" href="#">Gas</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Kerosene</a>
+                  </li>
+                  <!-- add others -->
+                </ul>
+                <li><a href="Contact Us.html" class="active">Contact Us</a></li>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- ============================================================= -->
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+      <div class="contact-hero-content">
+        <div class="hero-illustration">
+          <div class="laptop-icon">
+            <div class="screen">
+              <div class="email-icon">@</div>
+            </div>
+            <div class="notification bell-icon">🔔</div>
+            <div class="notification heart-icon">❤️</div>
+            <div class="notification plane-icon">✈️</div>
+            <div class="notification chart-icon">📊</div>
+          </div>
+        </div>
+        <div class="hero-text">
+          <h1>Have questions? Shoot us an email.</h1>
+          <p>
+            We are an industry-leading petroleum company that provides the
+            latest energy solutions and insights about fuel, logistics, and how
+            it impacts your business and operations.
+          </p>
+          <p class="sub-text">
+            Have a question for us or feedback? Please click on the most
+            appropriate category and fill out the form to reach us.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- Main Contact Section -->
+    <section class="main-contact">
+      <div class="contact-container">
+        <!-- Left Side - Contact Categories -->
+        <div class="contact-categories">
+          <h2>How can we help?</h2>
+          <div class="category-list">
+            <div class="category-item" data-category="partnership">
+              <span class="number">1.</span>
+              <span class="text">I want to partner with Zambis Petroleum</span>
+            </div>
+            <div class="category-item" data-category="media">
+              <span class="number">2.</span>
+              <span class="text">I'm a reporter or work in the media</span>
+            </div>
+            <div class="category-item" data-category="supplier">
+              <span class="number">3.</span>
+              <span class="text">I'm a current or potential supplier</span>
+            </div>
+            <div class="category-item" data-category="careers">
+              <span class="number">4.</span>
+              <span class="text">I want to work for Zambis Petroleum</span>
+            </div>
+            <div class="category-item" data-category="news">
+              <span class="number">5.</span>
+              <span class="text">I have industry news or insights</span>
+            </div>
+            <div class="category-item" data-category="service">
+              <span class="number">6.</span>
+              <span class="text">I need fuel delivery or services</span>
+            </div>
+            <div class="category-item" data-category="technical">
+              <span class="number">7.</span>
+              <span class="text">I want to report a technical issue</span>
+            </div>
+            <div class="category-item" data-category="other">
+              <span class="number">8.</span>
+              <span class="text">I need something else</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side - Contact Form -->
+        <div class="contact-form-section">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="category">Category *</label>
+              <select id="category" name="category" required>
+                <option value="">Select a category</option>
+                <option value="partnership">Partnership Inquiry</option>
+                <option value="media">Media/Press Inquiry</option>
+                <option value="supplier">Supplier/Vendor Inquiry</option>
+                <option value="careers">Career Opportunities</option>
+                <option value="news">Industry News/Insights</option>
+                <option value="service">Fuel Services Request</option>
+                <option value="technical">Technical Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company/Organization</label>
+              <input type="text" id="company" name="company" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Please provide details about your inquiry..."
+                required
+              ></textarea>
+              <small class="char-count">0 characters / 0 words</small>
+            </div>
+
+            <div class="form-group">
+              <label for="attachment">Attachment (optional)</label>
+              <div class="file-upload-area" id="fileUploadArea">
+                <input
+                  type="file"
+                  id="attachment"
+                  name="attachment"
+                  accept=".pdf,.doc,.docx,.jpg,.png,.gif"
+                />
+                <div class="upload-text">
+                  <span class="upload-icon">📎</span>
+                  <span>Click or drop files to upload</span>
+                  <small
+                    >Supported formats: PDF, DOC, JPG, PNG (Max 10MB)</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="privacy" name="privacy" required />
+                <span class="checkmark"></span>
+                I agree to the
+                <a href="#" target="_blank">Privacy Policy</a> and
+                <a href="#" target="_blank">Terms of Service</a>
+              </label>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter" />
+                <span class="checkmark"></span>
+                I would like to receive updates about Zambis Petroleum services
+                and industry news
+              </label>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-icon">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+      <div class="info-container">
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <h3>Visit Our Office</h3>
+            <p>
+              7, Owodunni street Off Kayode street<br />Onipanu Lagos, Nigeria
+            </p>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <h3>Call Us</h3>
+            <p>+234 811 562 0645<br />24/7 Emergency Line</p>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <h3>Email Us</h3>
+            <p>info@zambiaspetroleum.com<br />support@zambiaspetroleum.com</p>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">⏰</div>
+            <h3>Business Hours</h3>
+            <p>
+              Monday - Friday: 8:00 AM - 10:00 PM<br />Saturday: 9:00 AM - 6:00
+              PM
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="#">Retail Fuel Services</a></li>
+          <li><a href="#">Commercial Solutions</a></li>
+          <li><a href="#">Fleet Services</a></li>
+          <li><a href="#">Wholesale Distribution</a></li>
+          <li><a href="#">Fuel Quality Testing</a></li>
+          <li><a href="#">Emergency Delivery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>7, Owodunni street Off Kayode street, Onipanu Lagos</p>
+        <p>+234 811 562 0645</p>
+        <p>info@zambiaspetroleum.com</p>
+        <p>Mon-Fri: 8:00 AM - 10:00 PM</p>
+      </div>
+
+      <div class="footer-social">
+        <h4 class="text-white">Follow us</h4>
+        <img class="social-icon" src="/icons8-facebook-50.png" alt="#" />
+        <img class="social-icon" src="/icons8-instagram-50.png" alt="#" />
+        <img class="social-icon" src="/icons8-linkedin-50.png" alt="#" />
+        <img class="social-icon" src="/icons8-x-50.png" alt="#" />
+      </div>
+
+      <div class="footer-bottom">
+        <p>24/7 Emergency: +234 811 562 0645</p>
+        <p>&copy; 2025 Zambis Petroleum. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ======================================================== -->
+    <script src="contact.js"></script>
+  </body>
+</html>
+```
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+  h1,
+  h2,
+  h3,
+  button,
+  .navbar a {
+    font-family: "Raleway", sans-serif;
+  }
+
+  p,
+  a,
+  h5,
+  small,
+  input,
+  textarea,
+  select {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+  header {
+    background-color: #fff;
+    padding: 0 2rem;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+  .logo {
+    width: auto;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 80px;
+    width: auto;
+  }
+
+  .header-content {
+    padding: 15px 0;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* align-items: center; */
+  }
+
+  .navbar ul li {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .navbar a:hover {
+    color: #fbbf24;
+    background-color: hsl(217, 28%, 25%);
+  }
+  /* ======================= */
+  /* Base styles: dropdown is hidden */
+  /* Container */
+  .dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Dropdown menu (hidden by default) */
+  .dropdown-content {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    max-width: 100vw;
+    overflow-x: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  /* Dropdown label (trigger) */
+  .drop-label {
+    cursor: pointer;
+    padding: 0.5rem;
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .drop-label:hover {
+    color: #fbbf24;
+    background-color: hsl(217, 28%, 25%);
+  }
+
+  /* Dropdown item styling */
+  .dropdown-content a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: black;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    border-radius: 8px;
+    visibility: visible;
+  }
+
+  /* Arrow styling */
+  .drop-label .arrow {
+    font-size: 0.8em;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .dropdown:hover .arrow {
+    transform: rotate(180deg);
+  }
+  .contact-hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  /* Show on hover (desktop only) */
+  @media (hover: hover) and (pointer: fine) {
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  }
+
+  /* Show on click (mobile) using checkbox toggle */
+  .dropdown input[type="checkbox"]:checked ~ .dropdown-content {
+    display: block;
+  }
+
+  /* ======================================= */
+  .hero-illustration {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .laptop-icon {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #333;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .screen {
+    width: 100%;
+    height: 120px;
+    background: #007bff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .email-icon {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .notification {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .bell-icon {
+    top: -20px;
+    left: -30px;
+    animation-delay: 0s;
+  }
+  .heart-icon {
+    top: -10px;
+    right: -40px;
+    animation-delay: 0.5s;
+  }
+  .plane-icon {
+    bottom: -20px;
+    right: -20px;
+    animation-delay: 1s;
+  }
+  .chart-icon {
+    bottom: -30px;
+    left: -20px;
+    animation-delay: 1.5s;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+
+  .sub-text {
+    font-weight: 600;
+    color: #007bff !important;
+  }
+
+  /* Main Contact Section */
+  .main-contact {
+    padding: 80px 20px;
+    background: white;
+  }
+
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  /* Contact Categories */
+  .contact-categories h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+  }
+
+  .category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .category-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+  }
+
+  .category-item:hover {
+    background: #e3f2fd;
+    border-left-color: #007bff;
+    transform: translateX(5px);
+  }
+
+  .category-item.active {
+    background: #e3f2fd;
+    border-left-color: #007bff;
+  }
+
+  .category-item .number {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #007bff;
+    min-width: 30px;
+  }
+
+  .category-item .text {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+  }
+
+  /* Contact Form */
+  .contact-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e5e9;
+  }
+
+  .form-group {
+    margin-bottom: 25px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #fff;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .char-count {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+    display: block;
+  }
+
+  /* File Upload */
+  .file-upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .file-upload-area:hover {
+    border-color: #007bff;
+    background: #f8f9ff;
+  }
+
+  .file-upload-area input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .upload-text .upload-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .upload-text span:not(.upload-icon) {
+    display: block;
+    color: #666;
+  }
+
+  .upload-text small {
+    color: #999;
+    font-size: 0.85rem;
+  }
+
+  /* Checkbox Groups */
+  .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    accent-color: #007bff;
+  }
+
+  .checkbox-label a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .checkbox-label a:hover {
+    text-decoration: underline;
+  }
+
+  /* Submit Button */
+  .submit-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+  }
+
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+  }
+
+  .submit-btn:active {
+    transform: translateY(0);
+  }
+
+  .btn-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+
+  .submit-btn:hover .btn-icon {
+    transform: translateX(5px);
+  }
+
+  /* Contact Information Section */
+  .contact-info {
+    background: #f8f9fa;
+    padding: 80px 20px;
+  }
+
+  .info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .info-item {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .info-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .info-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .info-item h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .info-item p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  /* Footer Styles (same as main site) */
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    background: #006699;
+    padding: 30px 20px;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .footer-section:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+  }
+
+  .footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bolder;
+  }
+
+  .footer-section ul {
+    list-style: none;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-section ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-section p {
+    margin: 5px 0;
+    color: #fff;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 0.95em;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  .footer-social {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .footer-social h4 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .contact-hero-content,
+    .contact-container {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .hero-text {
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar ul {
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    .contact-hero {
+      padding: 60px 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+
+    .laptop-icon {
+      width: 250px;
+      height: 160px;
+    }
+
+    .main-contact {
+      padding: 60px 20px;
+    }
+
+    .contact-categories h2 {
+      font-size: 2rem;
+    }
+
+    .contact-form {
+      padding: 30px 20px;
+    }
+
+    .footer {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .footer-section {
+      margin: 10px 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-text h1 {
+      font-size: 1.8rem;
+    }
+
+    .contact-hero {
+      padding: 40px 15px;
+    }
+
+    .main-contact {
+      padding: 40px 15px;
+    }
+
+    .contact-form {
+      padding: 20px 15px;
+    }
+
+    .submit-btn {
+      padding: 15px 30px;
+    }
+
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 768px) {
+    html,
+    body {
+      max-width: 100%;
+      margin: 0 0;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 20px;
+    }
+
+    /* .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    } */
+
+    .header-content {
+    padding: 10px 15px;
+    flex-direction: grid;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .navbar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar ul {
+    flex-direction: grid;
+    gap: 10px;
+    width: 100%;
+    /* top: 100%; */
+    text-align: center;
+  }
+
+    .contact-container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .contact-hero-content {
+      padding: 0 15px;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .contact-form {
+      padding: 25px;
+    }
+
+    .category-item {
+      padding: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-text h1 {
+      font-size: 1.8rem;
+    }
+
+    .contact-hero {
+      padding: 40px 15px;
+    }
+
+    .main-contact {
+      padding: 40px 15px;
+    }
+
+    .contact-form {
+      padding: 20px 15px;
+    }
+
+    .submit-btn {
+      padding: 15px 30px;
+    }
+
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .info-item {
+      padding: 30px 20px;
+    }
+
+    .footer-section {
+      padding: 15px;
+    }
+  }
+</style>
+
+<script></script>
+
+<!-- ## **📋 Quick Setup Instructions:**
+
+1. **Create 3 files:**
+   - `Contact.html` (copy HTML code above)
+   - `contact-style.css` (copy CSS code above)  
+   - `contact.js` (copy JavaScript code above)
+
+2. **Update image paths in HTML to match your files:**
+   ```html
+   <img src="your-logo.png" alt="Zambis_logo" />
+   <img class="social-icon" src="your-facebook-icon.png" alt="#" />
+   ```
+
+3. **Update navigation links to match your site structure**
+
+4. **Test by opening `Contact.html` in your browser**
+
+That's it! Your contact page is ready with all the interactive features from the prototype! 🚀 -->
