@@ -18,43 +18,25 @@
     <header class="bg-white shadow-md">
       <div class="header-content">
         <div class="logo">
-          <img src="/img-logo.png" alt="Zambis_logo" />
+          <a href="/index.html"
+            ><!-- or "index.html" or your homepage URL -->
+            <img src="/img-logo.png" alt="Zambis_logo" />
+          </a>
         </div>
         <div class="nav-con">
+          <!-- Mobile menu button -->
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
           <nav class="navbar">
-            <ul>
+            <ul id="mobile-nav">
               <li><a href="index.html">Home</a></li>
               <li><a href="aboutUs.html">About</a></li>
-              <li class="dropdown">
-                <a href="#" class="drop-label"
-                  >Services <span class="arrow">▼</span></a
-                >
-                <ul class="dropdown-content">
-                  <li><a class="dropdown-item" href="#">Logistics</a></li>
-                  <li><a class="dropdown-item" href="#">Retail</a></li>
-                  <li><a class="dropdown-item" href="#">S &amp; T</a></li>
-                  <li><a class="dropdown-item" href="#">Distribution</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Fleet Management</a>
-                  </li>
-                  <!-- add others -->
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="drop-label"
-                  >Products <span class="arrow">▼</span></a
-                >
-                <ul class="dropdown-content">
-                  <li><a class="dropdown-item" href="#">Petrol</a></li>
-                  <li><a class="dropdown-item" href="#">Oil</a></li>
-                  <li><a class="dropdown-item" href="#">Diesel</a></li>
-                  <li><a class="dropdown-item" href="#">Gas</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Kerosene</a>
-                  </li>
-                  <!-- add others -->
-                </ul>
-              </li>
+              <li><a href="Service.html">Services</a></li>
+              <li><a href="Products.html">Products</a></li>
               <li><a href="Contact Us.html">Contact Us</a></li>
             </ul>
           </nav>
@@ -68,13 +50,13 @@
         <div class="slide fade">
           <div
             class="slide-image"
-            style="background-image: url('petrol-station.jpg')"
+            style="background-image: url('Petrol-station.jpeg')"
           ></div>
         </div>
         <div class="slide fade">
           <div
             class="slide-image"
-            style="background-image: url('petrol-tank.jpg')"
+            style="background-image: url('petrol-tank.jpeg')"
           ></div>
         </div>
       </div>
@@ -84,6 +66,9 @@
           Zambis Petroleum is committed to delivering reliable energy solutions
           while maintaining environmental responsibility.
         </p>
+      </div>
+      <div>
+        <a class="btn-ener" href="/Contact Us.html">Learn More</a>
       </div>
     </section>
 
@@ -99,7 +84,7 @@
             temporibus voluptatum.
           </p>
           <div>
-            <button class="btn-primary">Learn More</button>
+            <a class="btn-primary" href="/Contact Us.html">Learn More</a>
           </div>
         </div>
 
@@ -111,7 +96,7 @@
             voluptatibus expedita!
           </p>
           <div>
-            <button class="btn-primary">Learn More</button>
+            <a class="btn-primary" href="/Contact Us.html">Learn More</a>
           </div>
         </div>
 
@@ -123,7 +108,7 @@
             dicta.
           </p>
           <div>
-            <button class="btn-primary">Learn More</button>
+            <a class="btn-primary" href="/Contact Us.html">Learn More</a>
           </div>
         </div>
       </div>
@@ -140,8 +125,8 @@
           their fuel needs. Contact our team today to discuss your requirements.
         </p>
         <div class="button-container">
-          <button class="primary_btn">Request a Quote</button>
-          <button class="secondary_btn">Contact Sales Team</button>
+          <a class="primary_btn" href="/Contact Us.html">Request a Quote</a>
+          <a class="secondary_btn" href="/Contact Us.html">Contact Sales</a>
         </div>
       </div>
     </section>
@@ -156,7 +141,7 @@
         </p>
         <div class="form">
           <input type="email" placeholder="email@example.com" />
-          <button>Refuel your Engine</button>
+          <a href="/Contact Us.html">Refuel your Engine</a>
         </div>
       </div>
     </section>
@@ -175,10 +160,10 @@
         <h3>Quick Links</h3>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="Service.html">Services</a></li>
+          <li><a href="Contact Us.html">Contact</a></li>
           <li><a href="#">Careers</a></li>
         </ul>
       </div>

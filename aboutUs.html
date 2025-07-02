@@ -1,1126 +1,62 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>About Us - Zambis Petroleum Limited</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AboutUs</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- if using a stylesheet -->
   </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-    h1,
-    h2,
-    h3,
-    h4,
-    button,
-    .navbar a {
-      font-family: "Raleway", sans-serif;
-    }
-
-    p,
-    a,
-    h5,
-    small {
-      font-family: "Open Sans", sans-serif;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      /* outline: 1px solid red !important; */
-    }
-
-    html,
-    body {
-      background-color: whitesmoke;
-      color: #333;
-      line-height: 1.6;
-      overflow-x: hidden;
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 0;
-      min-width: auto;
-    }
-
-    /* Header Styles */
-    header {
-      background-color: #fff;
-      padding: 0 2rem;
-    }
-
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      width: 100%;
-      box-sizing: border-box;
-      position: relative;
-      left: 0;
-      right: 0;
-    }
-
-    .logo {
-      width: auto;
-      gap: 10px;
-    }
-
-    .logo img {
-      height: 80px;
-      width: auto;
-    }
-
-    .header-content {
-      padding: 15px 0;
-    }
-
-    .navbar ul {
-      display: flex;
-      gap: 40px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      /* align-items: center; */
-    }
-
-    .navbar ul li {
-      display: flex;
-      align-items: center;
-    }
-
-    .navbar a {
-      color: #007bff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      padding: 0.5rem;
-      border-radius: 0.25rem;
-    }
-
-    .navbar a:hover {
-      color: #fbbf24;
-      background-color: hsl(217, 28%, 25%);
-    }
-    /* ======================= */
-    /* Base styles: dropdown is hidden */
-    /* Container */
-    .dropdown {
-      position: relative;
-      display: flex;
-      align-items: center;
-    }
-
-    /* Dropdown menu (hidden by default) */
-    .dropdown-content {
-      display: none;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: white;
-      max-width: 100vw;
-      overflow-x: auto;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      z-index: 1000;
-    }
-
-    /* Dropdown label (trigger) */
-    .drop-label {
-      cursor: pointer;
-      padding: 0.5rem;
-      color: #007bff;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .drop-label:hover {
-      color: #fbbf24;
-      background-color: hsl(217, 28%, 25%);
-    }
-
-    /* Dropdown item styling */
-    .dropdown-content a {
-      display: block;
-      padding: 0.5rem 1rem;
-      color: black;
-      text-decoration: none;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #f1f1f1;
-    }
-
-    /* Show dropdown on hover */
-    .dropdown:hover .dropdown-content {
-      display: block;
-      opacity: 1;
-      border-radius: 8px;
-      visibility: visible;
-    }
-
-    /* Arrow styling */
-    .drop-label .arrow {
-      font-size: 0.8em;
-      margin-left: 5px;
-      transition: transform 0.3s ease;
-    }
-
-    .dropdown:hover .arrow {
-      transform: rotate(180deg);
-    }
-    .contact-hero-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    /* Show on hover (desktop only) */
-    @media (hover: hover) and (pointer: fine) {
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-    }
-
-    /* Show on click (mobile) using checkbox toggle */
-    .dropdown input[type="checkbox"]:checked ~ .dropdown-content {
-      display: block;
-    }
-    /* ============================= */
-
-    /* Hero Section */
-    .about-hero {
-      height: 400px;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=1600&h=400&fit=crop")
-          center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      background-position: center center;
-      background-size: cover;
-    }
-
-    .hero-overlay {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hero-content {
-      text-align: center;
-      color: white;
-      max-width: 800px;
-      padding: 20px 20px;
-    }
-
-    .hero-text h1 {
-      font-size: 3.5rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    }
-
-    .hero-text p {
-      font-size: 1.3rem;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    }
-
-    /* Our Company Section */
-    .our-company {
-      padding: 100px 20px;
-      background: white;
-    }
-
-    .company-container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .company-content {
-      width: 100% !important;
-      overflow-x: hidden;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: start;
-    }
-
-    .map-container {
-      position: relative;
-      width: 100%;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    .africa-map {
-      width: 100%;
-      height: auto;
-      filter: sepia(1) hue-rotate(200deg) saturate(2);
-    }
-
-    .map-markers {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .marker {
-      position: absolute;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .marker-nigeria {
-      top: 35%;
-      left: 45%;
-    }
-    .marker-ghana {
-      top: 45%;
-      left: 40%;
-    }
-    .marker-kenya {
-      top: 50%;
-      left: 70%;
-    }
-    .marker-south-africa {
-      top: 85%;
-      left: 55%;
-    }
-
-    .marker-dot {
-      width: 12px;
-      height: 12px;
-      background: #007bff;
-      border: 3px solid white;
-      border-radius: 50%;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-      animation: pulse 2s infinite;
-    }
-
-    .marker-label {
-      position: absolute;
-      top: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      white-space: nowrap;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .marker:hover .marker-label,
-    .marker.active .marker-label {
-      opacity: 1;
-    }
-
-    @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
-      }
-      70% {
-        box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
-      }
-      100% {
-        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
-      }
-    }
-
-    .company-info h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #333;
-      margin-bottom: 30px;
-    }
-
-    .company-description {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #666;
-      margin-bottom: 25px;
-      text-align: justify;
-    }
-
-    .vision-mission-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      margin-top: 50px;
-    }
-
-    .vision-section,
-    .mission-section {
-      padding: 30px;
-      background: #f8f9fa;
-      border-radius: 15px;
-      border-left: 5px solid #007bff;
-    }
-
-    .section-number {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #007bff;
-      margin-bottom: 15px;
-    }
-
-    .vision-section h3,
-    .mission-section h3 {
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: #333;
-      margin-bottom: 15px;
-    }
-
-    .vision-section p,
-    .mission-section p {
-      color: #666;
-      line-height: 1.6;
-    }
-
-    /* Our Values Section */
-    .our-values {
-      padding: 100px 20px;
-      background: #f8f9fa;
-    }
-
-    .values-container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .values-header {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .values-header h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #333;
-      margin-bottom: 20px;
-    }
-
-    .values-header p {
-      font-size: 1.1rem;
-      color: #666;
-    }
-
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 30px;
-    }
-
-    .value-card {
-      background: white;
-      padding: 40px 30px;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
-      border-top: 4px solid transparent;
-    }
-
-    .value-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      border-top-color: #007bff;
-    }
-
-    .value-icon {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      display: block;
-    }
-
-    .value-card h3 {
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: #333;
-      margin-bottom: 15px;
-    }
-
-    .value-card p {
-      color: #666;
-      line-height: 1.6;
-    }
-
-    /* Leadership Team Section */
-    .leadership-team {
-      padding: 100px 20px;
-      background: white;
-    }
-
-    .team-container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .team-header {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .team-header h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #333;
-      margin-bottom: 20px;
-    }
-
-    .team-header p {
-      font-size: 1.1rem;
-      color: #666;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 40px;
-    }
-
-    .team-member {
-      background: #f8f9fa;
-      border-radius: 20px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    }
-
-    .team-member:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    }
-
-    .member-photo {
-      width: 100%;
-      height: 250px;
-      overflow: hidden;
-    }
-
-    .member-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .team-member:hover .member-photo img {
-      transform: scale(1.1);
-    }
-
-    .member-info {
-      padding: 30px;
-      text-align: center;
-    }
-
-    .member-info h4 {
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .position {
-      color: #007bff;
-      font-weight: 600;
-      margin-bottom: 15px;
-      font-size: 1rem;
-    }
-
-    .bio {
-      color: #666;
-      line-height: 1.6;
-      font-size: 0.95rem;
-    }
-
-    /* Statistics Section */
-    .company-stats {
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #007bff, #0056b3);
-      color: white;
-    }
-
-    .stats-container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 40px;
-    }
-
-    .stat-item {
-      text-align: center;
-    }
-
-    .stat-number {
-      font-size: 3.5rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: white;
-    }
-
-    .stat-label {
-      font-size: 1.1rem;
-      color: rgba(255, 255, 255, 0.9);
-      font-weight: 500;
-    }
-
-    /* Footer Styles */
-    .footer {
-      display: flex;
-      flex-wrap: wrap;
-      background: #006699;
-      padding: 30px 20px;
-      border-radius: 10px 10px 0 0;
-      margin: 0 auto;
-      max-width: 1200px;
-    }
-
-    .footer-section {
-      flex: 1 1 200px;
-      margin: 10px;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-
-    .footer-section:hover {
-      background-color: rgba(255, 255, 255, 0.15);
-      transform: translateY(-5px);
-    }
-
-    .footer-section h3 {
-      margin-bottom: 10px;
-      font-size: 1.2em;
-      color: #fff;
-      font-weight: bolder;
-    }
-
-    .footer-section ul {
-      list-style: none;
-    }
-
-    .footer-section ul li {
-      margin-bottom: 8px;
-    }
-
-    .footer-section ul li a {
-      text-decoration: none;
-      color: black;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .footer-section ul li a:hover {
-      text-decoration: underline;
-    }
-
-    .footer-section p {
-      margin: 5px 0;
-      color: #fff;
-    }
-
-    .footer-bottom {
-      width: 100%;
-      text-align: center;
-      margin-top: 20px;
-      padding: 15px;
-      background-color: rgba(0, 0, 0, 0.2);
-      font-size: 0.95em;
-      color: #fff;
-      letter-spacing: 1px;
-    }
-
-    .footer-social {
-      width: 100%;
-      text-align: center;
-      padding: 15px 0;
-    }
-
-    .footer-social h4 {
-      color: #fff;
-      margin-bottom: 15px;
-    }
-
-    .social-icon {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-      text-align: center;
-      background-color: #fff;
-      border-radius: 50%;
-      margin: 0 5px;
-      color: white;
-      transition: all 0.3s ease;
-    }
-
-    .social-icon:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-      transform: scale(1.1);
-    }
-    /* Base styles (default mobile view) */
-    header,
-    section,
-    footer {
-      padding: 20px;
-    }
-
-    /* ============================================== */
-    /* MOBILE MEDIA QUERIES */
-    /* ============================================== */
-
-    /* Tablet and Small Desktop */
-    @media (max-width: 1024px) {
-      .hero-text h1 {
-        font-size: 3rem;
-      }
-
-      .company-content {
-        gap: 60px;
-      }
-
-      .values-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      }
-    }
-
-    /* Tablet */
-    @media (max-width: 768px) {
-      /* Header */
-
-      header {
-        padding: 0 1rem;
-      }
-
-      .header-content {
-        padding: 5px;
-        gap: 10px;
-      }
-
-      .logo img {
-        height: 60px;
-      }
-
-      .navbar ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: white;
-        flex-direction: column;
-        gap: 0;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 0 0 10px 10px;
-        padding: 20px;
-      }
-
-      .navbar ul.show {
-        display: flex;
-      }
-
-      .navbar ul li {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        border-bottom: 1px solid #eee;
-      }
-
-      .navbar ul li:last-child {
-        border-bottom: none;
-      }
-
-      .mobile-menu-button {
-        display: block;
-      }
-
-      /* Hero Section */
-      .about-hero {
-        height: 300px;
-      }
-
-      .hero-text h1 {
-        font-size: 2.5rem;
-        margin-bottom: 15px;
-      }
-
-      .hero-text p {
-        font-size: 1.1rem;
-      }
-
-      /* Company Section */
-      .our-company {
-        padding: 60px 20px;
-      }
-
-      .company-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .company-map {
-        order: 2;
-      }
-
-      .company-info {
-        order: 1;
-      }
-
-      .company-info h2 {
-        font-size: 2rem;
-      }
-
-      .company-description {
-        text-align: left;
-      }
-
-      .vision-mission-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-        margin-top: 40px;
-      }
-
-      .vision-section,
-      .mission-section {
-        padding: 25px;
-      }
-
-      /* Values Section */
-      .our-values {
-        padding: 60px 20px;
-      }
-
-      .values-header h2 {
-        font-size: 2rem;
-      }
-
-      .values-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 25px;
-      }
-
-      .value-card {
-        padding: 30px 25px;
-      }
-
-      /* Leadership Team */
-      .leadership-team {
-        padding: 60px 20px;
-      }
-
-      .team-header h2 {
-        font-size: 2rem;
-      }
-
-      .team-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-      }
-
-      /* Statistics */
-      .company-stats {
-        padding: 60px 20px;
-      }
-
-      .stats-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 30px;
-      }
-
-      .stat-number {
-        font-size: 2.5rem;
-      }
-
-      /* Footer */
-      .footer {
-        padding: 20px;
-      }
-
-      .footer-section {
-        flex: 1 1 100%;
-        margin: 5px 0;
-        padding: 15px;
-      }
-
-      .social-icon {
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-      }
-    }
-
-    /* Mobile */
-    @media (max-width: 480px) {
-      /* Header */
-      body {
-        max-width: 100%;
-        overflow-x: hidden;
-        position: relative;
-        margin: 0 0;
-      }
-
-      header {
-        padding: 0 0.5rem;
-      }
-
-      .logo img {
-        height: 50px;
-      }
-
-      /* Hero Section */
-      .about-hero {
-        height: 250px;
-      }
-
-      .hero-content {
-        padding: 15px;
-      }
-
-      .hero-text h1 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-      }
-
-      .hero-text p {
-        font-size: 1rem;
-      }
-
-      /* Company Section */
-      .our-company {
-        padding: 40px 15px;
-      }
-
-      .company-info h2 {
-        font-size: 1.8rem;
-      }
-
-      .company-description {
-        font-size: 1rem;
-      }
-
-      .vision-section,
-      .mission-section {
-        padding: 20px;
-      }
-
-      .section-number {
-        font-size: 1.5rem;
-      }
-
-      /* Values Section */
-      .our-values {
-        padding: 40px 15px;
-      }
-
-      .values-header h2 {
-        font-size: 1.8rem;
-      }
-
-      .values-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .value-card {
-        padding: 25px 20px;
-      }
-
-      .value-icon {
-        font-size: 2.5rem;
-      }
-
-      /* Leadership Team */
-      .leadership-team {
-        padding: 40px 15px;
-      }
-
-      .team-header h2 {
-        font-size: 1.8rem;
-      }
-
-      .team-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-      }
-
-      .member-info {
-        padding: 25px;
-      }
-
-      /* Statistics */
-      .company-stats {
-        padding: 40px 15px;
-      }
-
-      .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-      }
-
-      .stat-number {
-        font-size: 2rem;
-      }
-
-      .stat-label {
-        font-size: 1rem;
-      }
-
-      /* Footer */
-      .footer {
-        padding: 15px;
-        border-radius: 0;
-      }
-
-      .footer-section {
-        padding: 12px;
-      }
-
-      .footer-section h3 {
-        font-size: 1.1rem;
-      }
-
-      .footer-section ul li a {
-        font-size: 13px;
-      }
-
-      .footer-bottom {
-        font-size: 0.85em;
-      }
-    }
-
-    /* Small Mobile */
-    @media (max-width: 320px) {
-      .hero-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .hero-text p {
-        font-size: 0.9rem;
-      }
-
-      .company-info h2 {
-        font-size: 1.5rem;
-      }
-
-      .values-header h2,
-      .team-header h2 {
-        font-size: 1.5rem;
-      }
-
-      .stat-number {
-        font-size: 1.8rem;
-      }
-
-      .stats-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-      }
-
-      .value-card,
-      .vision-section,
-      .mission-section {
-        padding: 15px;
-      }
-    }
-  </style>
-
+  <!-- ========================================================= -->
   <body>
-    <!-- =========================================================== -->
     <header class="bg-white shadow-md">
       <div class="header-content">
         <div class="logo">
-          <img src="/img-logo.png" alt="Zambis_logo" />
+          <a href="/index.html"
+            ><!-- or "index.html" or your homepage URL -->
+            <img src="/img-logo.png" alt="Zambis_logo" />
+          </a>
         </div>
         <div class="nav-con">
+          <!-- Mobile menu button -->
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
           <nav class="navbar">
-            <ul>
+            <ul id="mobile-nav">
               <li><a href="index.html">Home</a></li>
               <li><a href="aboutUs.html">About</a></li>
-              <li class="dropdown">
-                <a href="#" class="drop-label"
-                  >Services <span class="arrow">▼</span></a
-                >
-                <ul class="dropdown-content">
-                  <li><a class="dropdown-item" href="#">Logistics</a></li>
-                  <li><a class="dropdown-item" href="#">Retail</a></li>
-                  <li><a class="dropdown-item" href="#">S &amp; T</a></li>
-                  <li><a class="dropdown-item" href="#">Distribution</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Fleet Management</a>
-                  </li>
-                  <!-- add others -->
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="drop-label"
-                  >Products <span class="arrow">▼</span></a
-                >
-                <ul class="dropdown-content">
-                  <li><a class="dropdown-item" href="#">Petrol</a></li>
-                  <li><a class="dropdown-item" href="#">Oil</a></li>
-                  <li><a class="dropdown-item" href="#">Diesel</a></li>
-                  <li><a class="dropdown-item" href="#">Gas</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Kerosene</a>
-                  </li>
-                  <!-- add others -->
-                </ul>
-              </li>
-
+              <li><a href="Service.html">Services</a></li>
+              <li><a href="Products.html">Products</a></li>
               <li><a href="Contact Us.html">Contact Us</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <!-- ============================================================= -->
+
+    <!-- ================================================================== -->
     <!-- Hero Section with Industrial Background -->
     <section class="about-hero">
-      <div class="hero-overlay">
+      <div class="hero-wrapper">
+        <img src="/petrol-cargo.jpg" alt="petrol-cargo" class="hero-bg" />
+        <div class="overlay"></div>
         <div class="hero-content">
-          <div class="hero-text">
-            <h1>About Zambis Petroleum</h1>
-            <p>Leading Africa's Energy Future with Excellence and Innovation</p>
-          </div>
+          <h1>About Zambis Petroleum</h1>
+          <p>Leading Africa’s Energy Future with Excellence and Innovation</p>
         </div>
       </div>
     </section>
-
     <!-- ============================================================= -->
     <!-- Our Company Section -->
     <section class="our-company">
@@ -1129,7 +65,7 @@
           <div class="company-map">
             <div class="map-container">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/86/Africa_%28orthographic_projection%29.svg"
+                src="./Africa_(orthographic_projection).svg"
                 alt="Africa Map"
                 class="africa-map"
               />
@@ -1156,7 +92,6 @@
               </div>
             </div>
           </div>
-
           <div class="company-info">
             <h2>Our Company</h2>
             <p class="company-description">
@@ -1190,7 +125,6 @@
                   mollitia?
                 </p>
               </div>
-
               <div class="mission-section">
                 <div class="section-number">02</div>
                 <h3>Our Mission</h3>
@@ -1206,16 +140,14 @@
         </div>
       </div>
     </section>
-
     <!-- ============================================================= -->
     <!-- Our Values Section (My Additional Section) -->
     <section class="our-values">
+      <div class="values-header">
+        <h2>Our Core Values</h2>
+        <p>The principles that guide everything we do at Zambis Petroleum</p>
+      </div>
       <div class="values-container">
-        <div class="values-header">
-          <h2>Our Core Values</h2>
-          <p>The principles that guide everything we do at Zambis Petroleum</p>
-        </div>
-
         <div class="values-grid">
           <div class="value-card">
             <div class="value-icon">🛡️</div>
@@ -1225,13 +157,11 @@
               fugiat magnam, odit dolorem voluptatem esse.
             </p>
           </div>
-
           <div class="value-card">
             <div class="value-icon">⚡</div>
             <h3>Excellence</h3>
             <p>15</p>
           </div>
-
           <div class="value-card">
             <div class="value-icon">🤝</div>
             <h3>Integrity</h3>
@@ -1240,7 +170,6 @@
               neque? Iste odio at officia unde.
             </p>
           </div>
-
           <div class="value-card">
             <div class="value-icon">🌱</div>
             <h3>Sustainability</h3>
@@ -1249,7 +178,6 @@
               provident eum quaerat et quo rem.
             </p>
           </div>
-
           <div class="value-card">
             <div class="value-icon">🎯</div>
             <h3>Innovation</h3>
@@ -1258,7 +186,6 @@
               soluta temporibus laudantium? Est, alias mollitia?
             </p>
           </div>
-
           <div class="value-card">
             <div class="value-icon">🌍</div>
             <h3>Community</h3>
@@ -1270,75 +197,7 @@
         </div>
       </div>
     </section>
-
-    <!-- ============================================================= -->
-    <!-- Leadership Team Section -->
-    <!-- <section class="leadership-team">
-      <div class="team-container">
-        <div class="team-header">
-          <h2>Leadership Team</h2>
-          <p>
-            Meet the experienced professionals leading Zambis Petroleum towards
-            a sustainable energy future
-          </p>
-        </div>
-
-        <div class="team-grid">
-          <div class="team-member">
-            <div class="member-photo">
-              <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face"
-                alt="CEO"
-              />
-            </div>
-            <div class="member-info">
-              <h4>Dr. James Olumide</h4>
-              <p class="position">Chief Executive Officer</p>
-              <p class="bio">
-                25+ years in the petroleum industry with extensive experience in
-                strategic planning and operations management.
-              </p>
-            </div>
-          </div>
-
-          <div class="team-member">
-            <div class="member-photo">
-              <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face"
-                alt="COO"
-              />
-            </div>
-            <div class="member-info">
-              <h4>Mrs. Adunni Bakare</h4>
-              <p class="position">Chief Operating Officer</p>
-              <p class="bio">
-                Expert in logistics and supply chain management with a track
-                record of operational excellence across Africa.
-              </p>
-            </div>
-          </div>
-
-          <div class="team-member">
-            <div class="member-photo">
-              <img
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
-                alt="CTO"
-              />
-            </div>
-            <div class="member-info">
-              <h4>Eng. Michael Okafor</h4>
-              <p class="position">Chief Technology Officer</p>
-              <p class="bio">
-                Leading our digital transformation initiatives and implementing
-                innovative technology solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- ============================================================= -->
+    <!-- ============================================ -->
     <!-- Statistics Section -->
     <section class="company-stats">
       <div class="stats-container">
@@ -1369,15 +228,14 @@
       <div class="footer-section">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="Service.html">Services</a></li>
+          <li><a href="Contact Us.html">Contact</a></li>
           <li><a href="#">Careers</a></li>
         </ul>
       </div>
-
       <div class="footer-section">
         <h3>Our Services</h3>
         <ul>
@@ -1389,7 +247,6 @@
           <li><a href="#">Emergency Delivery</a></li>
         </ul>
       </div>
-
       <div class="footer-section">
         <h3>Contact Us</h3>
         <p>7, Owodunni street Off Kayode street, Onipanu Lagos</p>
@@ -1397,7 +254,6 @@
         <p>info@zambiaspetroleum.com</p>
         <p>Mon-Fri: 8:00 AM - 10:00 PM</p>
       </div>
-
       <div class="footer-social">
         <h4 class="text-white">Follow us</h4>
         <img class="social-icon" src="/icons8-facebook-50.png" alt="#" />
@@ -1405,11 +261,101 @@
         <img class="social-icon" src="/icons8-linkedin-50.png" alt="#" />
         <img class="social-icon" src="/icons8-x-50.png" alt="#" />
       </div>
-
       <div class="footer-bottom">
         <p>24/7 Emergency: +234 811 562 0645</p>
         <p>&copy; 2025 Zambis Petroleum. All Rights Reserved.</p>
       </div>
     </footer>
+    <script src="aboutUs.js"></script>
   </body>
 </html>
+
+<!-- =========================================================================== -->
+<script>
+  (function () {
+    // Cache DOM elements
+    const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+    const mobileNav = document.getElementById("mobile-nav");
+    const dropLabels = document.querySelectorAll(".drop-label");
+    const dropdowns = document.querySelectorAll(".dropdown");
+
+    // Utility: close all dropdowns
+    function closeAllDropdowns() {
+      dropdowns.forEach((d) => {
+        d.classList.remove("active");
+        const btn = d.querySelector(".drop-label");
+        btn.setAttribute("aria-expanded", "false");
+      });
+    }
+
+    // Toggle mobile menu
+    function toggleMobileMenu() {
+      const isActive = mobileNav.classList.toggle("active");
+      mobileMenuBtn.classList.toggle("active");
+      mobileMenuBtn.setAttribute("aria-expanded", isActive);
+      if (!isActive) closeAllDropdowns();
+    }
+    mobileMenuBtn.addEventListener("click", toggleMobileMenu);
+
+    // Toggle a dropdown (mobile)
+    function toggleDropdown(dropdown) {
+      const isActive = dropdown.classList.contains("active");
+      closeAllDropdowns();
+      if (!isActive) {
+        dropdown.classList.add("active");
+        dropdown
+          .querySelector(".drop-label")
+          .setAttribute("aria-expanded", "true");
+      }
+    }
+    dropLabels.forEach((label) => {
+      label.addEventListener("click", (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          toggleDropdown(label.parentElement);
+        }
+      });
+    });
+
+    // Close menus when clicking outside mobile nav
+    document.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768 && !e.target.closest(".nav-con")) {
+        if (mobileNav.classList.contains("active")) {
+          toggleMobileMenu();
+        }
+      }
+    });
+
+    // Close everything on Escape
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        if (mobileNav.classList.contains("active")) {
+          toggleMobileMenu();
+        }
+        closeAllDropdowns();
+      }
+    });
+
+    // Handle window resize
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        if (mobileNav.classList.contains("active")) {
+          toggleMobileMenu();
+        }
+        closeAllDropdowns();
+      }
+    });
+
+    // Initialize ARIA accessibility
+    window.addEventListener("load", () => {
+      mobileMenuBtn.setAttribute("aria-controls", "mobile-nav");
+      mobileMenuBtn.setAttribute("aria-expanded", "false");
+
+      dropLabels.forEach((label) => {
+        label.setAttribute("aria-haspopup", "true");
+        label.setAttribute("aria-expanded", "false");
+        label.setAttribute("role", "button");
+      });
+    });
+  })();
+</script>
