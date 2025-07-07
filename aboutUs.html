@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AboutUs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <!-- ========================================================= -->
+
+  <body>
+    <header class="bg-white shadow-md">
+      <div class="header-content">
+        <div class="logo">
+          <a href="/index.html"
+            ><!-- or "index.html" or your homepage URL -->
+            <img src="/img-logo.png" alt="Zambis_logo" />
+          </a>
+        </div>
+        <div class="nav-con">
+          <!-- Mobile menu button -->
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="navbar">
+            <ul id="mobile-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutUs.html">About</a></li>
+              <li><a href="Service.html">Services</a></li>
+              <li><a href="Products.html">Products</a></li>
+              <li><a href="Contact-Us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================================================================== -->
+    <!-- Hero Section with Industrial Background -->
+    <section class="about-hero">
+      <div class="hero-wrapper">
+        <img src="/petrol-cargo.jpg" alt="petrol-cargo" class="hero-bg" />
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h1>About Zambis Petroleum</h1>
+          <p>Leading Africa’s Energy Future with Excellence and Innovation</p>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================================= -->
+    <!-- Our Company Section -->
+    <section class="our-company">
+      <div class="company-container">
+        <div class="company-content">
+          <div class="company-map">
+            <div class="map-container">
+              <img
+                src="./Africa_(orthographic_projection).svg"
+                alt="Africa Map"
+                class="africa-map"
+              />
+              <div class="map-markers">
+                <div class="marker marker-nigeria" data-country="Nigeria">
+                  <div class="marker-dot"></div>
+                  <div class="marker-label">Nigeria</div>
+                </div>
+                <div class="marker marker-ghana" data-country="Ghana">
+                  <div class="marker-dot"></div>
+                  <div class="marker-label">Ghana</div>
+                </div>
+                <div class="marker marker-kenya" data-country="Kenya">
+                  <div class="marker-dot"></div>
+                  <div class="marker-label">Kenya</div>
+                </div>
+                <div
+                  class="marker marker-south-africa"
+                  data-country="South Africa"
+                >
+                  <div class="marker-dot"></div>
+                  <div class="marker-label">South Africa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="company-info">
+            <h2>Our Company</h2>
+            <p class="company-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, vel
+              magni, similique architecto distinctio et in quod impedit error
+              accusantium dolore necessitatibus nostrum voluptatibus nemo
+              maiores, eligendi vero inventore odio rem nisi nobis. Rem alias in
+              officiis dolorum, recusandae nostrum, natus repellendus veritatis
+              ipsum amet ab soluta consectetur vero ipsam! Magnam odio at id
+              harum quasi nobis? Optio, dignissimos illum.
+            </p>
+            <p class="company-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
+              consectetur ea voluptatum a ex minima aut? Eveniet, cumque earum
+              debitis dolores sit iste, dolorum deleniti nobis eum facere
+              repellendus voluptatum fugiat at natus dignissimos libero hic
+              totam, officiis id. Maxime, voluptatum, optio error illo ut omnis
+              fugiat, deserunt exercitationem delectus odit vel beatae totam
+              distinctio soluta doloribus illum consectetur alias.
+            </p>
+
+            <!-- Vision and Mission Grid -->
+            <div class="vision-mission-grid">
+              <div class="vision-section">
+                <div class="section-number">01</div>
+                <h3>Our Vision</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio minus modi quod laudantium sequi, sit dolore inventore
+                  esse recusandae quam, molestiae minima tempora, temporibus
+                  mollitia?
+                </p>
+              </div>
+              <div class="mission-section">
+                <div class="section-number">02</div>
+                <h3>Our Mission</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+                  necessitatibus repellendus incidunt vero, rem sed nisi,
+                  officia qui non voluptate magnam doloribus veniam deserunt
+                  omnis?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================================= -->
+    <!-- Our Values Section (My Additional Section) -->
+    <section class="our-values">
+      <div class="values-header">
+        <h2>Our Core Values</h2>
+        <p>The principles that guide everything we do at Zambis Petroleum</p>
+      </div>
+      <div class="values-container">
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">🛡️</div>
+            <h3>Safety First</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              fugiat magnam, odit dolorem voluptatem esse.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">⚡</div>
+            <h3>Excellence</h3>
+            <p>15</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3>Integrity</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
+              neque? Iste odio at officia unde.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🌱</div>
+            <h3>Sustainability</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+              provident eum quaerat et quo rem.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🎯</div>
+            <h3>Innovation</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+              soluta temporibus laudantium? Est, alias mollitia?
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🌍</div>
+            <h3>Community</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+              excepturi maiores laborum sint, recusandae repudiandae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- Statistics Section -->
+    <section class="company-stats">
+      <div class="stats-container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">38+</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">African Countries</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">500K+</div>
+            <div class="stat-label">Satisfied Customers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">1000+</div>
+            <div class="stat-label">Employees</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- Footer -->
+    <footer class="dark-footer">
+      <div class="footer-main">
+        <div class="footer-zam">
+          <img src="/img-logo.png" alt="" />
+        </div>
+        <div class="footer-column">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Service.html">Services</a></li>
+            <li><a href="Contact-Us.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>OUR SERVICES</h3>
+          <ul>
+            <li><a href="#">Retail Fuel Services</a></li>
+            <li><a href="#">Commercial Solutions</a></li>
+            <li><a href="#">Fleet Services</a></li>
+            <li><a href="#">Wholesale Distribution</a></li>
+            <li><a href="#">Fuel Quality Testing</a></li>
+            <li><a href="#">Emergency Delivery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>CONTACT US</h3>
+          <p>7, Owodunni street Off Kayode street, Onipanu Lagos</p>
+          <p>+234 811 562 0645</p>
+          <p>info@zambiaspetroleum.com</p>
+          <p>Mon-Fri: 8:00 AM - 10:00 PM</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>SOCIAL MEDIA</h3>
+          <p>
+            Follow us on social media to find out the latest updates on our
+            progress.
+          </p>
+          <div class="social-icons">
+            <a href="#"><img src="/icons8-facebook-50.png" alt="FB" /></a>
+            <a href="#"><img src="/icons8-instagram-50.png" alt="IG" /></a>
+            <a href="#"><img src="/icons8-linkedin-50.png" alt="Linkedin" /></a>
+            <a href="#"><img src="/icons8-x-50.png" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>24/7 Emergency: +234 811 562 0645</p>
+        <p>&copy; 2025 Zambia's Petroleum. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Security</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </footer>
+    <script src="aboutUs.js"></script>
+  </body>
+</html>
+
+<!-- =========================================================================== -->
+<script>
+  (function () {
+    // Cache DOM elements
+    const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+    const mobileNav = document.getElementById("mobile-nav");
+    const dropLabels = document.querySelectorAll(".drop-label");
+    const dropdowns = document.querySelectorAll(".dropdown");
+
+    // Utility: close all dropdowns
+    function closeAllDropdowns() {
+      dropdowns.forEach((d) => {
+        d.classList.remove("active");
+        const btn = d.querySelector(".drop-label");
+        btn.setAttribute("aria-expanded", "false");
+      });
+    }
+
+    // Toggle mobile menu
+    function toggleMobileMenu() {
+      const isActive = mobileNav.classList.toggle("active");
+      mobileMenuBtn.classList.toggle("active");
+      mobileMenuBtn.setAttribute("aria-expanded", isActive);
+      if (!isActive) closeAllDropdowns();
+    }
+    mobileMenuBtn.addEventListener("click", toggleMobileMenu);
+
+    // Toggle a dropdown (mobile)
+    function toggleDropdown(dropdown) {
+      const isActive = dropdown.classList.contains("active");
+      closeAllDropdowns();
+      if (!isActive) {
+        dropdown.classList.add("active");
+        dropdown
+          .querySelector(".drop-label")
+          .setAttribute("aria-expanded", "true");
+      }
+    }
+    dropLabels.forEach((label) => {
+      label.addEventListener("click", (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          toggleDropdown(label.parentElement);
+        }
+      });
+    });
+
+    // Close menus when clicking outside mobile nav
+    document.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768 && !e.target.closest(".nav-con")) {
+        if (mobileNav.classList.contains("active")) {
+          toggleMobileMenu();
+        }
+      }
+    });
+
+    // Close everything on Escape
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        if (mobileNav.classList.contains("active")) {
+          toggleMobileMenu();
+        }
+        closeAllDropdowns();
+      }
+    });
+
+    // Handle window resize
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        if (mobileNav.classList.contains("active")) {
+          toggleMobileMenu();
+        }
+        closeAllDropdowns();
+      }
+    });
+
+    // Initialize ARIA accessibility
+    window.addEventListener("load", () => {
+      mobileMenuBtn.setAttribute("aria-controls", "mobile-nav");
+      mobileMenuBtn.setAttribute("aria-expanded", "false");
+
+      dropLabels.forEach((label) => {
+        label.setAttribute("aria-haspopup", "true");
+        label.setAttribute("aria-expanded", "false");
+        label.setAttribute("role", "button");
+      });
+    });
+  })();
+</script>
