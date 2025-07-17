@@ -148,6 +148,25 @@ function toggleMobileMenu() {
   nav.classList.toggle("active");
 }
 
+let slideIndex = 0;
+
+function showSlides() {
+  const slides = document.querySelectorAll(".slide");
+
+  slides.forEach((slide) => {
+    slide.classList.remove("fade"); // Remove 'fade' (make all invisible)
+  });
+
+  slideIndex++;
+  if (slideIndex > slides.length) slideIndex = 1;
+
+  slides[slideIndex - 1].classList.add("fade"); // Show current slide
+
+  setTimeout(showSlides, 4000); // Change slide every 4 seconds
+}
+
+document.addEventListener("DOMContentLoaded", showSlides);
+
 // function toggleMobileMenu() {
 //   const btn = document.querySelector(".mobile-menu-btn");
 //   const nav = document.querySelector(".navbar");
